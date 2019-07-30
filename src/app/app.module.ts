@@ -8,11 +8,15 @@ import { environment } from '../environments/environment';
 
 import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
+import { CapitalizadoPipe } from './pipes/capitalizado.pipes';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CapitalizadoPipe,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,
