@@ -25,4 +25,8 @@ export class AppComponent {
       ciudad: 'aqui'
     }
   };
+
+  valorPromesa = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Llegó la data'), 3500);
+  });
 }
